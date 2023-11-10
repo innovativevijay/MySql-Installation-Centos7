@@ -14,6 +14,7 @@ sudo yum clean all --verbose
    ```
 3. ** Setup Yum Repository
 ```sh
+sudo update
 rpm -Uvh https://repo.mysql.com/mysql80-community-release-el7-3.noarch.rpm
 ```
 4. ** Disable All Repositories In MySql Repository File
