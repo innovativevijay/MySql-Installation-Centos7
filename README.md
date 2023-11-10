@@ -39,9 +39,8 @@ yum --enablerepo=mysql80-community install mysql-community-server
 6. ** Start MySql
    ```sh
    sudo systemctl start mysqld
-  sudo systemctl status mysqld
-  sudo systemctl enable mysqld
-  
+   sudo systemctl status mysqld
+   sudo systemctl enable mysqld  
    ```
 
    
