@@ -1,5 +1,5 @@
 # MySql-Installation-Centos7
-1. ** Remove previous installed packages and clear cache
+1. ** Remove previous installed packages and clear cache **
 ```sh
 # look for the mysql installed packages
 sudo yum list installed | grep mysql
