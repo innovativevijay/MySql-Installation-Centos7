@@ -24,14 +24,14 @@ sed -i 's/enabled=1/enabled=0/' /etc/yum.repos.d/mysql-community.repo
 ```sh
 yum --enablerepo=mysql80-community install mysql-community-server 
 ```
--If you get below error then use below command otherwise skip it
-__ The GPG keys listed for the "MySQL 8.0 Community Server" repository are already installed but they are not correct for this package.
+### If you get below error then use below command otherwise skip it
+_ The GPG keys listed for the "MySQL 8.0 Community Server" repository are already installed but they are not correct for this package.
 Check that the correct key URLs are configured for this repository.
 
 
  Failing package is: mysql-community-client-8.0.28-1.el7.x86_64
- GPG Keys are configured as: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql __
- -Import New GPG Key:
+ GPG Keys are configured as: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql _
+ ### Import New GPG Key:
  ```sh
 rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2022
 yum --enablerepo=mysql80-community install mysql-community-server
