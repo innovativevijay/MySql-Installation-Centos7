@@ -36,11 +36,29 @@ Check that the correct key URLs are configured for this repository.
 rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2022
 yum --enablerepo=mysql80-community install mysql-community-server
 ```
-6. ** Start MySql
+6. ** Start MySql **
    ```sh
    sudo systemctl start mysqld
    sudo systemctl status mysqld
    sudo systemctl enable mysqld  
    ```
 
-   
+# How To Access MySql
+
+1. ** Get Temporary Password Of MySql **
+   ```sh
+   sudo  grep 'temporary password' /var/log/mysqld.log
+   ```
+ 2.  ** Access MySQL and Change the Password: **
+       ```sh
+         mysql -u root -p
+      ```
+       Note:
+       It will prompt you for the password. Enter the temporary password from the log file.
+         After logging in, you can set a new password for the root user:
+3. ** Reset Root Password **
+   ```sh
+   ALTER USER 'root'@'localhost' IDENTIFIED BY 'your_new_password';
+
+   ```
+   Replace 'your_new_password' with the actual password you want to set.
