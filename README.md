@@ -25,7 +25,7 @@ sed -i 's/enabled=1/enabled=0/' /etc/yum.repos.d/mysql-community.repo
 ```sh
 yum --enablerepo=mysql80-community install mysql-community-server 
 ```
-<h3 style="color:red;">If you get below error then use below command otherwise skip it</h3>
+###<h3 style="color:red;">If you get below error then use below command otherwise skip it</h3>
 
 _ The GPG keys listed for the "MySQL 8.0 Community Server" repository are already installed but they are not correct for this package.
 Check that the correct key URLs are configured for this repository.
